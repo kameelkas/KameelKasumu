@@ -1,0 +1,23 @@
+html{
+    background-color:black;
+    color:#dddbd6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .canvas-container {
+    position: relative;
+  }
+  
+  #matrix {
+    position: absolute;
+    width:100%;
+    height:100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+    pointer-events: none; /* This ensures the content does not interfere with canvas interaction */
+  }
