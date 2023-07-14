@@ -1,23 +1,142 @@
-html{
-    background-color:black;
-    color:#dddbd6;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  .canvas-container {
-    position: relative;
-  }
-  
-  #matrix {
-    position: absolute;
-    width:100%;
-    height:100vh;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  
-  .content {
-    position: relative;
-    z-index: 2;
-    pointer-events: none; /* This ensures the content does not interfere with canvas interaction */
-  }
+body {
+  background-color: black;
+  color: #dddbd6;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.canvas-container {
+  position: relative;
+}
+
+#matrix {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+#page {
+  position: relative;
+  flex: 1;
+  opacity: 1;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  background-color: #808080;
+  width:100vw;
+  opacity: 0.7;
+  z-index: 3;
+  border-width: 0 0 5px 0;
+  border-color: #808080;
+  border-style: solid;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0 20px;
+}
+
+nav ul li a {
+  font-size: 3.5vh;
+  padding: 0 10px;
+  color: aliceblue;
+  transition: 0.7s;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  transition: 0.7s;
+  color: black;
+}
+
+#empty{
+  height:10vh;
+}
+
+#me{
+  display: flex;
+}
+
+#topLeft {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+img {
+  width: 250px;
+  height: 300px;
+  border: 2px solid #808080;
+  border-radius: 50%;
+  box-shadow: 8px 8px 8px rgba(94, 92, 92, 0.5);
+  object-fit: cover;
+}
+
+#name {
+  text-align: center;
+}
+
+#name h1 {
+  font-size: 80px;
+}
+
+#topRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#topRight h2 {
+  font-size: 30px;
+}
+
+#about {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15vw;
+
+} 
+
+#about p {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  margin: 5px;
+}
+
+
+footer {
+  position: relative;
+  font-size: 3vh;
+  color:#dddbd6;
+  text-align: center;
+  border-top: 1px #dddbd6 solid;
+  padding-bottom: 10px;
+  opacity: 1;
+}
