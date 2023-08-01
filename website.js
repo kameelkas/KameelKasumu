@@ -34,3 +34,11 @@ const draw = () => {
 
 setInterval(draw, 40);
 /* Matrix Rain Background; Original Code from: https://github.com/javascriptacademy-stash/digital-rain */
+
+document.getElementById("navButton").addEventListener("click", () => {
+  const navItems = document.querySelectorAll(".navItems")
+  navItems.forEach(nav => nav.classList.toggle("toggle"));
+});
+
+
+
