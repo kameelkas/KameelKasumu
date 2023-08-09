@@ -182,7 +182,7 @@ nav ul li a:hover{
   flex-direction: column;
 }
 
-#skills h1 {
+#skills h1, #skills h2 {
   text-align: center;
 }
 
@@ -194,10 +194,26 @@ nav ul li a:hover{
   align-items: center;
 }
 
+.skillNames {
+  font-size: 25px;
+}
+
 progress {
   width: 45vw;
   margin: 0 10px 10px 0;
   accent-color: #072d7f;
+  height: 30px;
+}
+
+#resumeIcon {
+  font-size: 45px;
+  padding: 5px 10px;
+  color: #808080;
+  background: black;
+}
+
+#resumeIcon:hover {
+  color: white;
 }
 
 #projects {
@@ -361,6 +377,7 @@ input::placeholder, textarea::placeholder {
   border: 2.5px solid white;
   margin-bottom: 15px;
   font-size:x-large;
+  width: 200px;
 }
 
 #contactSubmitButton:hover {
@@ -425,13 +442,14 @@ footer {
   #navButton {
     display: block;
     position: fixed;
-    top: 1px;
+    top: 0;
     right: 20px;
     cursor: pointer;
     color: aliceblue;
     background-color: transparent;
     border-style: solid;
     border-color: aliceblue;
+    border-radius: 5px;
   }
 
   #navButton:hover {

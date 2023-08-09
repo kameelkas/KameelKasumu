@@ -8,8 +8,26 @@
   <title>Kameel Kasumu</title>
   <link rel="stylesheet" href="normalize.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="./favicon/apple-touch-icon.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="./favicon/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="./favicon/favicon-16x16.png"
+/>
+<link rel="icon" type="image/x-icon" href="./favicon/favicon.ico" />
+<link rel="manifest" href="./favicon/site.webmanifest" />
 </head>
 
 <body>
@@ -75,34 +93,33 @@
           <h1>Skills</h1>
           <div id="bars">
             <div id="sectOne">
-              <div>HTML</div>
+              <div class="skillNames">HTML</div>
               <div><progress value="85" max="100">85%</progress></div>
-              <div>CSS</div>
+              <div class="skillNames">CSS</div>
               <div><progress value="80" max="100">80%</progress></div>
-              <div>Javascript</div>
+              <div class="skillNames">Javascript</div>
               <div><progress value="78" max="100">78%</progress></div>
-              <div>Python</div>
+              <div class="skillNames">Python</div>
               <div><progress value="90" max="100">90%</progress></div>
-              <div>Java</div>
+              <div class="skillNames">Java</div>
               <div><progress value="86" max="100">86%</progress></div>
             </div>
             <div id="sectTwo">
-              <div>C/C++</div>
+              <div class="skillNames">C/C++</div>
               <div><progress value="60" max="100">60%</progress></div>
-              <div>MySQL</div>
+              <div class="skillNames">MySQL</div>
               <div><progress value="70" max="100">70%</progress></div>
-              <div>PHP</div>
-              <div><progress value="0" max="100">0%</progress></div>
-              <div>Git/Github</div>
-              <div><progress value="90" max="100">90%</progress></div>
-              <div>RV32G Assembly</div>
+              <div class="skillNames">PHP</div>
               <div><progress value="55" max="100">55%</progress></div>
+              <div class="skillNames">Git/Github</div>
+              <div><progress value="90" max="100">90%</progress></div>
+              <div class="skillNames">RV32G Assembly</div>
+              <div><progress value="65" max="100">65%</progress></div>
             </div>
           </div>
+            <h2>Download my resume here!&nbsp;<a href="./Kameel Kasumu Resume 2023 Online.pdf" target="_blank" download><i id="resumeIcon" class="fa">&#xf0f6;</i></a></h2>
         </section>
 
-        <!-- 
-      -->
         <section class="major" id="projects">
           <h1>Projects</h1>
           <h2>Hover / Click (On Mobile) to learn more about these selected projects!</h2>
@@ -166,35 +183,33 @@
           <h1>Contact</h1>
           <h2>Feel free to send me a message or reach me through any of the platforms below!</h2>
 
-          <form id="contactContainer">
+          <form action="https://formspree.io/f/mjvqgqee" method="POST" id="contactContainer">
             <div id="contactDetails">
               <label for="contactName">Name</label>
-              <input type="text" id="contactName" class="inputFields" placeholder="Your Name">
-
-              <label for="contactSubject">Subject</label>
-              <input type="text" id="contactSubject" class="inputFields" placeholder="Subject">
+              <input type="text" id="contactName" name="name" class="inputFields" placeholder="Your Name" required="">
 
               <label for="contactName">Email</label>
-              <input type="email" id="contactEmail" class="inputFields" placeholder="Your Email Address">
+              <input type="email" id="contactEmail" name="email" class="inputFields" placeholder="Your Email Address" required="">
 
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" name="subject" class="inputFields" placeholder="Subject" required="">
             </div>
+
             <div id="contactMessage">
               <label for="message">Message</label>
-              <textarea  id="message" class="inputFields" placeholder="Your Message" rows="11"></textarea>
+              <textarea  id="message" class="inputFields" placeholder="Your Message" rows="11" required=""></textarea>
+              <button type="submit" id="contactSubmitButton">Send Message</button>
             </div>
           </form>
 
-          <button id="contactSubmitButton">Send Message</button>
-
           <div id="socials">
-            <a href="https://www.instagram.com/kameel.kk" target="_blank"><i class="fa socialIcons">&#xf16d;</i></a>
+            <a href="mailto:kameelkas@gmail.com"><i class="fa socialIcons">&#xf0e0;</i></a>
             <a href="https://github.com/kameelkas" target="_blank"><i class="fa socialIcons">&#xf09b;</i></a>
             <a href="https://www.linkedin.com/in/kameel-kasumu-691b68213/" target="_blank"><i class='fa socialIcons'>&#xf08c;</i></a>
           </div>
         </section>
 
       </section>
-
 
       <footer>&#169; Kameel Kasumu 2023</footer>
 

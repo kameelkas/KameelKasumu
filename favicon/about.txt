@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Sora
+- Font Author: Copyright 2019 The Sora Project Authors (https://github.com/sora-xor/sora-font)
+- Font Source: http://fonts.gstatic.com/s/sora/v11/xMQOuFFYT72X5wkB_18qmnndmSeMmX-KIwNhBti0.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
