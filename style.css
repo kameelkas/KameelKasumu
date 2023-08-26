@@ -1,21 +1,22 @@
 @font-face {
-  font-family: '29LTZawi'; /* Choose a name for your font */
-  src: url('./font/29LTZawi-Black.otf') format('otf'), 
-       url('./font/29LTZawi-Black.ttf') format('truetype'),
-       url('./font/29LTZawi-Bold.otf') format('otf'), 
-       url('./font/29LTZawi-Bold.ttf') format('truetype'),
-       url('./font/29LTZawi-ExtraBold.otf') format('otf'), 
-       url('./font/29LTZawi-ExtraBold.ttf') format('truetype'),
-       url('./font/29LTZawi-ExtraLight.otf') format('otf'), 
-       url('./font/29LTZawi-ExtraLight.ttf') format('truetype'),
-       url('./font/29LTZawi-Light.otf') format('otf'), 
-       url('./font/29LTZawi-Light.ttf') format('truetype'),
-       url('./font/29LTZawi-Medium.otf') format('otf'), 
-       url('./font/29LTZawi-Medium.ttf') format('truetype'),
-       url('./font/29LTZawi-Regular.otf') format('otf'), 
-       url('./font/29LTZawi-Regular.ttf') format('truetype'),
-       url('./font/29LTZawi-Thin.otf') format('otf'), 
-       url('./font/29LTZawi-Thin.ttf') format('truetype');
+  font-family: '29LTZawi';
+  /* Choose a name for your font */
+  src: url('./font/29LTZawi-Black.otf') format('otf'),
+    url('./font/29LTZawi-Black.ttf') format('truetype'),
+    url('./font/29LTZawi-Bold.otf') format('otf'),
+    url('./font/29LTZawi-Bold.ttf') format('truetype'),
+    url('./font/29LTZawi-ExtraBold.otf') format('otf'),
+    url('./font/29LTZawi-ExtraBold.ttf') format('truetype'),
+    url('./font/29LTZawi-ExtraLight.otf') format('otf'),
+    url('./font/29LTZawi-ExtraLight.ttf') format('truetype'),
+    url('./font/29LTZawi-Light.otf') format('otf'),
+    url('./font/29LTZawi-Light.ttf') format('truetype'),
+    url('./font/29LTZawi-Medium.otf') format('otf'),
+    url('./font/29LTZawi-Medium.ttf') format('truetype'),
+    url('./font/29LTZawi-Regular.otf') format('otf'),
+    url('./font/29LTZawi-Regular.ttf') format('truetype'),
+    url('./font/29LTZawi-Thin.otf') format('otf'),
+    url('./font/29LTZawi-Thin.ttf') format('truetype');
 }
 
 html {
@@ -59,7 +60,7 @@ nav {
   position: fixed;
   justify-content: center;
   background-color: #808080;
-  width:100vw;
+  width: 100vw;
   opacity: 1;
   z-index: 3;
 }
@@ -86,7 +87,7 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   transition: 0.7s;
   color: black;
 }
@@ -99,7 +100,7 @@ nav ul li a:hover{
   scroll-margin-top: 50px;
 }
 
-#me{
+#me {
   display: flex;
   padding-top: 10vh;
 }
@@ -139,11 +140,11 @@ nav ul li a:hover{
   align-items: center;
 }
 
-#topRight a{
+#topRight a {
   text-decoration: none;
 }
 
-#topRight a:hover{
+#topRight a:hover {
   text-decoration: underline;
   text-decoration-color: #808080;
 }
@@ -167,7 +168,7 @@ nav ul li a:hover{
   flex-direction: column;
   text-align: center;
   padding: 0 10vw;
-} 
+}
 
 #about p {
   justify-content: center;
@@ -182,7 +183,8 @@ nav ul li a:hover{
   flex-direction: column;
 }
 
-#skills h1, #skills h2 {
+#skills h1,
+#skills h2 {
   text-align: center;
 }
 
@@ -223,7 +225,7 @@ progress {
   margin-bottom: 15px;
 }
 
-#projects h2 {
+.projecth2 {
   text-align: center;
   margin: 0 2vw 2vw;
 }
@@ -256,9 +258,9 @@ progress {
   text-align: center;
   width: 100%;
   height: 100%;
-  padding:10px;
+  padding: 10px;
   box-sizing: border-box;
-  transition: opacity 1s ease; 
+  transition: opacity 1s ease;
 }
 
 .projectButtons {
@@ -267,7 +269,7 @@ progress {
   color: black;
   border: 0;
   border-radius: 30%;
-  transition: color 0.5s ease; 
+  transition: color 0.5s ease;
   padding: 5px 10px;
   font-size: 45px;
 }
@@ -280,6 +282,15 @@ progress {
   font-family: '29LTZawi';
   font-size: 40px;
   font-style: italic;
+}
+
+.projectInside.Hover h2 {
+  margin: 10px 0;
+}
+
+.projectInside.Hover p {
+  text-align: justify;
+  margin: 5px 10px;
 }
 
 .Normal {
@@ -341,7 +352,7 @@ input {
 }
 
 textarea {
-  width: 50vw; 
+  width: 50vw;
   overflow: auto;
 }
 
@@ -355,14 +366,16 @@ textarea {
   transition: 1s ease;
 }
 
-input:hover, textarea:hover {
+input:hover,
+textarea:hover {
   cursor: pointer;
   background: #2f2f2f;
   transition: 1s ease;
 }
 
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #a3a3a0;
 }
 
@@ -372,18 +385,18 @@ input::placeholder, textarea::placeholder {
   color: white;
   border: 0;
   border-radius: 10px;
-  transition: color 1s ease; 
+  transition: color 1s ease;
   padding: 5px 10px;
   border: 2.5px solid white;
   margin-bottom: 15px;
-  font-size:x-large;
+  font-size: x-large;
   width: 200px;
 }
 
 #contactSubmitButton:hover {
   color: black;
   background-color: white;
-  transition: color 1s ease; 
+  transition: color 1s ease;
 
 }
 
@@ -403,7 +416,7 @@ input::placeholder, textarea::placeholder {
 footer {
   position: relative;
   font-size: 3vh;
-  color:#dddbd6;
+  color: #dddbd6;
   text-align: center;
   border-top: 1px #dddbd6 solid;
   padding-bottom: 10px;
@@ -464,8 +477,9 @@ footer {
     flex-direction: column;
   }
 
-  input, textarea {
+  input,
+  textarea {
     width: 80vw;
   }
-  
+
 }

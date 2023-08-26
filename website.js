@@ -6,7 +6,7 @@ canvas.height = window.innerHeight;
 const nums = '0123456789';
 
 const fontSize = 20;
-const columns = canvas.width/fontSize;
+const columns = canvas.width / fontSize;
 
 const rainDrops = [];
 
